@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8013C3D8224947DF00711D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C3D7224947DF00711D21 /* AppDelegate.swift */; };
+		8013C3DA224947DF00711D21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C3D9224947DF00711D21 /* ViewController.swift */; };
+		8013C3DD224947DF00711D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8013C3DB224947DF00711D21 /* Main.storyboard */; };
+		8013C3E0224947DF00711D21 /* MoneyCount.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8013C3DE224947DF00711D21 /* MoneyCount.xcdatamodeld */; };
+		8013C3E2224947E400711D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8013C3E1224947E400711D21 /* Assets.xcassets */; };
+		8013C3E5224947E400711D21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8013C3E3224947E400711D21 /* LaunchScreen.storyboard */; };
+		8013C3F0224947E400711D21 /* MoneyCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C3EF224947E400711D21 /* MoneyCountTests.swift */; };
+		8013C3FB224947E500711D21 /* MoneyCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C3FA224947E500711D21 /* MoneyCountUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8013C3EC224947E400711D21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8013C3CC224947DF00711D21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8013C3D3224947DF00711D21;
+			remoteInfo = MoneyCount;
+		};
+		8013C3F7224947E500711D21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8013C3CC224947DF00711D21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8013C3D3224947DF00711D21;
+			remoteInfo = MoneyCount;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8013C3D4224947DF00711D21 /* MoneyCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8013C3D7224947DF00711D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8013C3D9224947DF00711D21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8013C3DC224947DF00711D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8013C3DF224947DF00711D21 /* MoneyCount.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyCount.xcdatamodel; sourceTree = "<group>"; };
+		8013C3E1224947E400711D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8013C3E4224947E400711D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8013C3E6224947E400711D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8013C3EB224947E400711D21 /* MoneyCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8013C3EF224947E400711D21 /* MoneyCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyCountTests.swift; sourceTree = "<group>"; };
+		8013C3F1224947E400711D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8013C3F6224947E500711D21 /* MoneyCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8013C3FA224947E500711D21 /* MoneyCountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyCountUITests.swift; sourceTree = "<group>"; };
+		8013C3FC224947E500711D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8013C3D1224947DF00711D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C3E8224947E400711D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C3F3224947E500711D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8013C3CB224947DF00711D21 = {
+			isa = PBXGroup;
+			children = (
+				8013C3D6224947DF00711D21 /* MoneyCount */,
+				8013C3EE224947E400711D21 /* MoneyCountTests */,
+				8013C3F9224947E500711D21 /* MoneyCountUITests */,
+				8013C3D5224947DF00711D21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8013C3D5224947DF00711D21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8013C3D4224947DF00711D21 /* MoneyCount.app */,
+				8013C3EB224947E400711D21 /* MoneyCountTests.xctest */,
+				8013C3F6224947E500711D21 /* MoneyCountUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8013C3D6224947DF00711D21 /* MoneyCount */ = {
+			isa = PBXGroup;
+			children = (
+				8013C3D7224947DF00711D21 /* AppDelegate.swift */,
+				8013C3D9224947DF00711D21 /* ViewController.swift */,
+				8013C3DB224947DF00711D21 /* Main.storyboard */,
+				8013C3E1224947E400711D21 /* Assets.xcassets */,
+				8013C3E3224947E400711D21 /* LaunchScreen.storyboard */,
+				8013C3E6224947E400711D21 /* Info.plist */,
+				8013C3DE224947DF00711D21 /* MoneyCount.xcdatamodeld */,
+			);
+			path = MoneyCount;
+			sourceTree = "<group>";
+		};
+		8013C3EE224947E400711D21 /* MoneyCountTests */ = {
+			isa = PBXGroup;
+			children = (
+				8013C3EF224947E400711D21 /* MoneyCountTests.swift */,
+				8013C3F1224947E400711D21 /* Info.plist */,
+			);
+			path = MoneyCountTests;
+			sourceTree = "<group>";
+		};
+		8013C3F9224947E500711D21 /* MoneyCountUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8013C3FA224947E500711D21 /* MoneyCountUITests.swift */,
+				8013C3FC224947E500711D21 /* Info.plist */,
+			);
+			path = MoneyCountUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8013C3D3224947DF00711D21 /* MoneyCount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8013C3FF224947E500711D21 /* Build configuration list for PBXNativeTarget "MoneyCount" */;
+			buildPhases = (
+				8013C3D0224947DF00711D21 /* Sources */,
+				8013C3D1224947DF00711D21 /* Frameworks */,
+				8013C3D2224947DF00711D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyCount;
+			productName = MoneyCount;
+			productReference = 8013C3D4224947DF00711D21 /* MoneyCount.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8013C3EA224947E400711D21 /* MoneyCountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8013C402224947E500711D21 /* Build configuration list for PBXNativeTarget "MoneyCountTests" */;
+			buildPhases = (
+				8013C3E7224947E400711D21 /* Sources */,
+				8013C3E8224947E400711D21 /* Frameworks */,
+				8013C3E9224947E400711D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8013C3ED224947E400711D21 /* PBXTargetDependency */,
+			);
+			name = MoneyCountTests;
+			productName = MoneyCountTests;
+			productReference = 8013C3EB224947E400711D21 /* MoneyCountTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8013C3F5224947E500711D21 /* MoneyCountUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8013C405224947E500711D21 /* Build configuration list for PBXNativeTarget "MoneyCountUITests" */;
+			buildPhases = (
+				8013C3F2224947E500711D21 /* Sources */,
+				8013C3F3224947E500711D21 /* Frameworks */,
+				8013C3F4224947E500711D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8013C3F8224947E500711D21 /* PBXTargetDependency */,
+			);
+			name = MoneyCountUITests;
+			productName = MoneyCountUITests;
+			productReference = 8013C3F6224947E500711D21 /* MoneyCountUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8013C3CC224947DF00711D21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Raphael LUCIANO";
+				TargetAttributes = {
+					8013C3D3224947DF00711D21 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8013C3EA224947E400711D21 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8013C3D3224947DF00711D21;
+					};
+					8013C3F5224947E500711D21 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8013C3D3224947DF00711D21;
+					};
+				};
+			};
+			buildConfigurationList = 8013C3CF224947DF00711D21 /* Build configuration list for PBXProject "MoneyCount" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8013C3CB224947DF00711D21;
+			productRefGroup = 8013C3D5224947DF00711D21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8013C3D3224947DF00711D21 /* MoneyCount */,
+				8013C3EA224947E400711D21 /* MoneyCountTests */,
+				8013C3F5224947E500711D21 /* MoneyCountUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8013C3D2224947DF00711D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C3E5224947E400711D21 /* LaunchScreen.storyboard in Resources */,
+				8013C3E2224947E400711D21 /* Assets.xcassets in Resources */,
+				8013C3DD224947DF00711D21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C3E9224947E400711D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C3F4224947E500711D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8013C3D0224947DF00711D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C3DA224947DF00711D21 /* ViewController.swift in Sources */,
+				8013C3E0224947DF00711D21 /* MoneyCount.xcdatamodeld in Sources */,
+				8013C3D8224947DF00711D21 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C3E7224947E400711D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C3F0224947E400711D21 /* MoneyCountTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8013C3F2224947E500711D21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013C3FB224947E500711D21 /* MoneyCountUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8013C3ED224947E400711D21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8013C3D3224947DF00711D21 /* MoneyCount */;
+			targetProxy = 8013C3EC224947E400711D21 /* PBXContainerItemProxy */;
+		};
+		8013C3F8224947E500711D21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8013C3D3224947DF00711D21 /* MoneyCount */;
+			targetProxy = 8013C3F7224947E500711D21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8013C3DB224947DF00711D21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8013C3DC224947DF00711D21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8013C3E3224947E400711D21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8013C3E4224947E400711D21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8013C3FD224947E500711D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8013C3FE224947E500711D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8013C400224947E500711D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyCount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RL.MoneyCount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8013C401224947E500711D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyCount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RL.MoneyCount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8013C403224947E500711D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyCountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RL.MoneyCountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyCount.app/MoneyCount";
+			};
+			name = Debug;
+		};
+		8013C404224947E500711D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyCountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RL.MoneyCountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyCount.app/MoneyCount";
+			};
+			name = Release;
+		};
+		8013C406224947E500711D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyCountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RL.MoneyCountUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyCount;
+			};
+			name = Debug;
+		};
+		8013C407224947E500711D21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyCountUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RL.MoneyCountUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyCount;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8013C3CF224947DF00711D21 /* Build configuration list for PBXProject "MoneyCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C3FD224947E500711D21 /* Debug */,
+				8013C3FE224947E500711D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8013C3FF224947E500711D21 /* Build configuration list for PBXNativeTarget "MoneyCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C400224947E500711D21 /* Debug */,
+				8013C401224947E500711D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8013C402224947E500711D21 /* Build configuration list for PBXNativeTarget "MoneyCountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C403224947E500711D21 /* Debug */,
+				8013C404224947E500711D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8013C405224947E500711D21 /* Build configuration list for PBXNativeTarget "MoneyCountUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8013C406224947E500711D21 /* Debug */,
+				8013C407224947E500711D21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8013C3DE224947DF00711D21 /* MoneyCount.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8013C3DF224947DF00711D21 /* MoneyCount.xcdatamodel */,
+			);
+			currentVersion = 8013C3DF224947DF00711D21 /* MoneyCount.xcdatamodel */;
+			path = MoneyCount.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8013C3CC224947DF00711D21 /* Project object */;
+}

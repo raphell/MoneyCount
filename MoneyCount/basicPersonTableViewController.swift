@@ -14,7 +14,12 @@ class basicPersonTableViewController: UITableViewController, NSFetchedResultsCon
 
     @IBOutlet weak var personTable: UITableView!
     
-    fileprivate lazy var basicPersonFetched : NSFetchedResultsController<Person> = {}()
+    fileprivate lazy var basicPersonFetched : NSFetchedResultsController<Person> = {
+        let request : NSFetchRequest<Person> = Person.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key:#keyPath(Person.nom), ascending:true)]
+        let fetchResultController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreDataManager.context, sectionNameKeyPath: nil, cacheName: nil)
+        fetchResultController.delegate = self
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

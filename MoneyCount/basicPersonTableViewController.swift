@@ -17,7 +17,7 @@ class basicPersonTableViewController: UITableViewController, NSFetchedResultsCon
     fileprivate lazy var basicPersonFetched : NSFetchedResultsController<Person> = {
         let request : NSFetchRequest<Person> = Person.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key:#keyPath(Person.nom), ascending:true)]
-        let fetchResultController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreDataManager.context, sectionNameKeyPath: nil, cacheName: nil)
+        let fetchResultController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreData, sectionNameKeyPath: nil, cacheName: nil)
         fetchResultController.delegate = self
     }()
     

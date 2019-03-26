@@ -16,8 +16,8 @@
 		8013C3F0224947E400711D21 /* MoneyCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C3EF224947E400711D21 /* MoneyCountTests.swift */; };
 		8013C3FB224947E500711D21 /* MoneyCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013C3FA224947E500711D21 /* MoneyCountUITests.swift */; };
 		80305702224A2C6D00CA31F8 /* basicPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80305701224A2C6D00CA31F8 /* basicPersonTableViewCell.swift */; };
-		80305704224A2E6900CA31F8 /* basicPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80305703224A2E6900CA31F8 /* basicPersonTableViewController.swift */; };
-		808F84FF224A607500BECA6A /* CoreDateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808F84FE224A607500BECA6A /* CoreDateManager.swift */; };
+		808F8501224A649F00BECA6A /* basicPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80305703224A2E6900CA31F8 /* basicPersonTableViewController.swift */; };
+		808F8503224A65DE00BECA6A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808F8502224A65DE00BECA6A /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		8013C3FC224947E500711D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80305701224A2C6D00CA31F8 /* basicPersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicPersonTableViewCell.swift; sourceTree = "<group>"; };
 		80305703224A2E6900CA31F8 /* basicPersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicPersonTableViewController.swift; sourceTree = "<group>"; };
-		808F84FE224A607500BECA6A /* CoreDateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDateManager.swift; sourceTree = "<group>"; };
+		808F8502224A65DE00BECA6A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 				8013C3D7224947DF00711D21 /* AppDelegate.swift */,
 				8013C3D9224947DF00711D21 /* ViewController.swift */,
 				8013C3DB224947DF00711D21 /* Main.storyboard */,
-				808F84FE224A607500BECA6A /* CoreDateManager.swift */,
+				808F8502224A65DE00BECA6A /* CoreDataManager.swift */,
 				80305703224A2E6900CA31F8 /* basicPersonTableViewController.swift */,
 				8013C3E1224947E400711D21 /* Assets.xcassets */,
 				8013C3E3224947E400711D21 /* LaunchScreen.storyboard */,
@@ -269,11 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808F84FF224A607500BECA6A /* CoreDateManager.swift in Sources */,
-				80305704224A2E6900CA31F8 /* basicPersonTableViewController.swift in Sources */,
+				808F8501224A649F00BECA6A /* basicPersonTableViewController.swift in Sources */,
 				8013C3DA224947DF00711D21 /* ViewController.swift in Sources */,
 				80305702224A2C6D00CA31F8 /* basicPersonTableViewCell.swift in Sources */,
 				8013C3E0224947DF00711D21 /* MoneyCount.xcdatamodeld in Sources */,
+				808F8503224A65DE00BECA6A /* CoreDataManager.swift in Sources */,
 				8013C3D8224947DF00711D21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

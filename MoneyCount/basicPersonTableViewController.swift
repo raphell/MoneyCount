@@ -14,15 +14,30 @@ class basicPersonTableViewController: UITableViewController, NSFetchedResultsCon
 
     @IBOutlet weak var personTable: UITableView!
     
+    
+    @IBAction func unwindToBasicList(sefue: UIStoryboardSegue){
+        
+    }
+    
+    
+    
+    
     fileprivate lazy var basicPersonFetched : NSFetchedResultsController<Person> = {
         let request : NSFetchRequest<Person> = Person.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key:#keyPath(Person.nom), ascending:true)]
-        let fetchResultController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreData, sectionNameKeyPath: nil, cacheName: nil)
+        let fetchResultController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: CoreDataManager.context, sectionNameKeyPath: nil, cacheName: nil)
         fetchResultController.delegate = self
+        return fetchResultController
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        do{
+            try self.basicPersonFetched.performFetch()
+        }
+        catch let error as NSError{
+            DialogBoxHelper.alert(view: self, error: error)
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -44,7 +59,12 @@ class basicPersonTableViewController: UITableViewController, NSFetchedResultsCon
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-    
+        let cell = self.personTable.dequeueReusableCell(withIdentifier: "basicPersonCell", for: indexPath) as! basicPersonTableViewCell
+        let person = self.basicPersonFetched.object(at: indexPath)
+        cell.firstName.text = person.prenom
+        cell.lastName.text = person.nom
+        //self.personPresenter.configure(theCell: cell, forPerson: person)
+        return cell
     }
 
     /*
@@ -92,14 +112,25 @@ class basicPersonTableViewController: UITableViewController, NSFetchedResultsCon
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
+    let segueInfoPersonId = "showInfoPersonSegue"
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == self.segueInfoPersonId{
+            if let indexPath = self.personTable.indexPathForSelectedRow{
+                let showInfoPersonViewController = segue.destination as! ShowInfoPersonViewController
+                
+                showInfoPersonViewController.myPersonToShow = self.basicPersonFetched.object(at: indexPath)
+            }
+        }
     }
-    */
+    
 
 }

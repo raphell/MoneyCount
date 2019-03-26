@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hJi-Ez-Mq9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -121,6 +121,11 @@
                                 <connections>
                                     <segue destination="J2u-YT-UaW" kind="show" id="plF-wg-WJH"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaz-cs-MSh">
+                                <rect key="frame" x="31" y="297" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -556,20 +561,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="le nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIO-8e-nXo">
-                                <rect key="frame" x="148" y="153" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="le Prenom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19H-LT-uJs">
-                                <rect key="frame" x="148" y="206" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telephone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLy-Ff-AAh">
                                 <rect key="frame" x="50" y="275" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -582,13 +573,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Supprimer"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="le Telephone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIp-oN-efd">
-                                <rect key="frame" x="167" y="275" width="98" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prenom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXT-AB-e5c">
                                 <rect key="frame" x="50" y="219" width="60" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -602,6 +586,13 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ud5-eX-12f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="g3W-ga-BRO" customClass="ShowInfoPersonViewController" customModule="MoneyCount" customModuleProvider="target">
+                    <connections>
+                        <outlet property="firstNameLabel" destination="JXT-AB-e5c" id="MmL-Gy-8xN"/>
+                        <outlet property="lastNameLabel" destination="vuR-qI-D7T" id="UPo-Qi-mTZ"/>
+                        <outlet property="phoneLabel" destination="jLy-Ff-AAh" id="RwG-E3-Cvs"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="2244" y="260"/>
         </scene>
@@ -659,7 +650,7 @@
                                         <connections>
                                             <outlet property="firstName" destination="OqZ-Bn-uXT" id="xbO-eW-rDl"/>
                                             <outlet property="lastName" destination="HNv-vD-MJh" id="x80-xt-oUI"/>
-                                            <segue destination="gfa-i0-OgV" kind="show" id="BhP-E9-wzF"/>
+                                            <segue destination="gfa-i0-OgV" kind="show" identifier="showInfoPersonSegue" id="BhP-E9-wzF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -682,7 +673,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="1535" y="260"/>
+            <point key="canvasLocation" x="1468" y="265"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pkU-e5-emx">
@@ -713,11 +704,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-tY-UH1">
-                                <rect key="frame" x="150" y="535" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Valider"/>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QhP-PG-tRv">
                                 <rect key="frame" x="146" y="198" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -746,12 +732,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-tY-UH1">
+                                <rect key="frame" x="284" y="251" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Valider"/>
+                                <connections>
+                                    <action selector="createNewPerson:" destination="gu9-eh-bVM" eventType="touchUpInside" id="cDY-xX-FQ8"/>
+                                    <segue destination="5ha-Ka-oIh" kind="unwind" unwindAction="unwindToBasicListWithSefue:" id="sDd-VR-vBn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="5zF-BB-uNX"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lw8-ML-b1e" appends="YES" id="Mhh-tR-e11"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <segue destination="5ha-Ka-oIh" kind="unwind" identifier="unwindToBasicList" unwindAction="unwindToBasicListWithSefue:" id="lXa-d6-swT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDO-xH-JzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="gu9-eh-bVM" customClass="addBasicPersonViewController" customModule="MoneyCount" customModuleProvider="target">
+                    <connections>
+                        <outlet property="firstNameEntry" destination="QhP-PG-tRv" id="3wE-Z6-vdE"/>
+                        <outlet property="globalView" destination="dXN-dx-oBg" id="cFf-Od-7rO"/>
+                        <outlet property="lastNameEntry" destination="Nh3-vj-j5v" id="VTf-bE-gvw"/>
+                        <outlet property="phoneEntry" destination="O2p-qx-YxT" id="QfT-zd-rsd"/>
+                    </connections>
+                </customObject>
+                <exit id="5ha-Ka-oIh" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="lw8-ML-b1e">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="gu9-eh-bVM" id="NWw-fc-YKe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1468" y="1028"/>
         </scene>
@@ -795,6 +811,9 @@
                                 <rect key="frame" x="164" y="512" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Valider"/>
+                                <connections>
+                                    <action selector="saveModification:" destination="Spw-bo-MaK" eventType="touchUpInside" id="2ci-t6-edT"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zo-Zo-LiW">
                                 <rect key="frame" x="160" y="175" width="97" height="30"/>
@@ -823,6 +842,13 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qiv-Ov-Khy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Spw-bo-MaK" customClass="modifyBasicPersonViewController" customModule="MoneyCount" customModuleProvider="target">
+                    <connections>
+                        <outlet property="firstNameTextField" destination="v59-J4-Rmj" id="hQb-xG-0jJ"/>
+                        <outlet property="lastNameTextField" destination="7Zo-Zo-LiW" id="HHS-YR-WIR"/>
+                        <outlet property="phoneTextField" destination="oE9-fQ-WX8" id="v5E-la-lcT"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="3009" y="260"/>
         </scene>
@@ -857,7 +883,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RlB-Qc-mtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1204" y="-27"/>
+            <point key="canvasLocation" x="-1266" y="-27"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4Ij-Bq-nDI">

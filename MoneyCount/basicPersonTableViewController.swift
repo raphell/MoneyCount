@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
-class basicPersonTableViewController: UITableViewController {
 
+class basicPersonTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+
+    @IBOutlet weak var personTable: UITableView!
+    
+    fileprivate lazy var basicPersonFetched : NSFetchedResultsController<Person> = {}()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +36,10 @@ class basicPersonTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    
     }
 
     /*

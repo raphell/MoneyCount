@@ -649,8 +649,9 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="hJi-Ez-Mq9" id="DCU-Ag-7Y9"/>
-                                    <outlet property="delegate" destination="hJi-Ez-Mq9" id="OvM-bV-Bxn"/>
+                                    <outlet property="dataSource" destination="h9l-ug-afY" id="jke-Oe-jtd"/>
+                                    <outlet property="delegate" destination="h9l-ug-afY" id="Cig-65-Lw8"/>
+                                    <outlet property="prefetchDataSource" destination="h9l-ug-afY" id="Y1o-hK-R0x"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2K-MQ-xUq">
@@ -672,6 +673,11 @@
                     <navigationItem key="navigationItem" id="sfR-8f-8XJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVU-jp-ivm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="h9l-ug-afY" customClass="basicPersonTableViewController" customModule="MoneyCount" customModuleProvider="target">
+                    <connections>
+                        <outlet property="personTable" destination="vRQ-k7-SAG" id="PQ0-yO-VNK"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1468" y="259.52023988005999"/>
         </scene>
